@@ -4,12 +4,10 @@ import { defineConfig } from "vite"
 
 export default defineConfig({
   plugins: [react()],
-  publicDir: "public", // 👈 вот эта строка — должна быть!
+  publicDir: "public", // ✅ эта строка важна!
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
 })
-
-
